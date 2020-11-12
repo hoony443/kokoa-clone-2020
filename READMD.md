@@ -1,4 +1,5 @@
 # Kokoa Clone 2020 Update
 
-I will definitely finish these courses!
+HTML & CSS are so much fun!
+
 I can make it :)
