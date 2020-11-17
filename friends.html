@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends - Kokoa Clone</title>
 </head>
+
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
@@ -24,7 +26,7 @@
             <i class="fas fa-battery-full fa-lg"></i>
             <!-- To do Lightning Icon -->
             <i class="fas fa-bolt"></i>
-        </div>        
+        </div>
     </div>
     <nav class="nav">
         <ul class="nav__list">
@@ -65,21 +67,35 @@
             <div class="user-component__column">
                 <img class="user-component__avatar user-component__avatar--xl" src="./img/user-hoon.jpg" alt="phooto">
                 <div class="user-component__text">
-                    <h4 class="user-component__title user-component__title--xl">DongHoon</h4> 
+                    <h4 class="user-component__title user-component__title--xl">DongHoon</h4>
                     <!-- <h6 class="user-component__subtitle">test</h6> -->
-                </div>            
+                </div>
             </div>
             <div class="user-component__column"></div>
         </div>
-        <div class="friends-container">
-            <div class="friends-channel">
-                <div class="friends-channel-1"></div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span class="friend-screen__channel-header-title">Channel</span>
+                <span class="friend-screen__channel-header-more">
+                    <i class="fas fa-angle-up"></i>
+                </span>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img class="user-component__avatar user-component__avatar--sm" src="./img/user-hoon.jpg"
+                        alt="photo">
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--sm">Channel</h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span>2</span>
+                    <i class="fas fa-angle-right"></i>
+                </div>
             </div>
         </div>
-    </main>    
-    <script
-        src="https://kit.fontawesome.com/6478f529f2.js"
-        crossorigin="anonymous"
-    ></script>
+    </main>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
