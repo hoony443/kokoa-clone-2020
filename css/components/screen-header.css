@@ -1,0 +1,16 @@
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+.screen-header {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.screen-header__title:first-child {
+    font-size: 30px;
+    font-weight: 900;
+}
+.screen-header__tools i {
+    padding: 0px 10px;
+}

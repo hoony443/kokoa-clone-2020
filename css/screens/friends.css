@@ -1,0 +1,17 @@
+.frineds-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9FA;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.frineds-display span:nth-child(2) {
+    padding: 0px 10px 0px 3px;
+    font-weight: 900;
+    color: rgba(0, 0 ,0, 0.7);
+}
+.frineds-display i {
+    color: rgba(0, 0 ,0, 0.1);
+}
