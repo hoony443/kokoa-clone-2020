@@ -17,19 +17,19 @@
     position: relative;
 }
 .nav__notification {
-    width: 20px;
-    height: 20px;
+    position: absolute;
+    top: -10%;
+    left: 34%;  
+}
+.nav__btn :last-child {
+    position: relative;
+}
+.nav__nav-dot {
     background-color: red;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     position: absolute;
-    top: -5px;
-    left: 133px;    
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
-    text-align: center;
-    line-height: normal;
-    font-size: 13px;
-    font-weight: 600;
-    color: white;    
+    top: 0%;
+    right: 0%;
 }

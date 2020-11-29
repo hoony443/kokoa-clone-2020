@@ -2,7 +2,7 @@
     padding: 0px var(--horizontal-space);
 }
 .screen-header {
-    margin-top: 45px;
+    margin: 45px 10px 30px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,4 +13,20 @@
 }
 .screen-header__tools i {
     padding: 0px 10px;
+}
+.screen-header__dot {
+    background-color: red;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    right: 4%;
+}
+.screen-header__back {
+    margin-left: 15px;
+}
+.screen-header__title-setting {
+    font-size: 22px;
+    font-weight: 600;
 }

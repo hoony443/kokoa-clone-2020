@@ -1,0 +1,28 @@
+.settings-elements {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.settings-elements__column {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    padding: 20px 25px;
+} 
+.settings-elements__column span {
+    padding-left: 15px;
+    font-size: 22px;
+}
+.settings-elements__column-version {
+    margin-left: 30%;
+    color: rgba(0, 0, 0, 0.6);
+} 
+.settings-elements-border {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.settings-elements__column-border {
+    margin-top: 20px;
+}

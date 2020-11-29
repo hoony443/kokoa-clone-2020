@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #F9F9FA;
     padding: 20px;
-    margin: 10px 0px;
+    margin: -20px 0px 10px 0px;
 }
 
 .frineds-display span:nth-child(2) {
@@ -23,7 +23,7 @@
 
 .friends-screen__channel {
     margin-top: var(--horizontal-space);
-    border-top: solid 1px rgba(0, 0, 0, 0.2);
+    border-top: var(--main-border);
 }
 
 .friends-screen__channel-header {

@@ -21,6 +21,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-.status-bar__column:last-child span,i {
+.status-bar__column:last-child span, i{
     margin-right: 5px;
 }
