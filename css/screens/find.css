@@ -114,3 +114,18 @@
     bottom: 5px;
     right: 5px;
 } 
+
+@keyframes heartBeat {
+    from {
+        color: white;
+    }
+    to {
+        transform: scale(2);
+        color: tomato;
+    }
+}
+.open-chat-contents__likes__word:hover {
+    /* will-change 브라우저에게 미리 알려주기 위함, 그래픽카드를 이용해서 애니메이션을 가속화 함, 브라우저도 도와줌 */
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
+}

@@ -1,5 +1,18 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {   
+        opacity: 1;
+    }
+}
+.conversation {
+    margin-top: 100px; 
+    animation: fadeIn 0.8s linear;    
+} 
 .background-color {
     background-color: #ABC1D1;
+    height: 500vh; 
 }
 .conversation-date {
     display: flex;
@@ -9,9 +22,8 @@
 }
 .conversation-date-title {
     background-color: rgba(0, 0, 0, 0.2);
-    width: 200px;
-    height: 28px;
-    border-radius: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
     color: white;
     display: flex;
     justify-content: center;
@@ -23,21 +35,33 @@
     margin: 20px 0px 20px 10px;
     display: flex;
     align-items: center;
+    
 }
 .conversation-me__name {
     color: rgba(0, 0, 0, 0.6);
     font-weight: 600;
+}
+@keyframes messageFadeInMe {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 .conversation-me__contents {
     width: 45px;
     height: 35px;
     background-color: white;
     border-radius: 10px;
+    border-top-left-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 7px;
-    
+    animation: messageFadeInMe 0.8s linear;
 }
 .conversation-me__time {
     color: rgba(0, 0, 0, 0.6);
@@ -53,16 +77,28 @@
     justify-content: flex-end;
     align-items: center;
 }
+@keyframes messageFadeInYou {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
 .conversation-you__contents {
     width: 120px;
     height: 40px;
     background-color: yellow;
     border-radius: 15px;
+    border-top-right-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     margin-right: 10px;
+    animation: messageFadeInYou 0.8s linear;
 }
 .conversation-you__time {
     color: rgba(0, 0, 0, 0.6);
@@ -75,34 +111,47 @@
 .conversation-keyboard {
     background-color: white;
     width: 100%;
-    height: 300px;
+    height: 330px;
     position: fixed;
     bottom: 0px;
 }
 .conversation-send {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5px 20px;
+    box-sizing: border-box;    
+}
+.conversation-send > i {
+    margin: 0px 5px 0px 15px;
+}
+.conversation-keyboard__icon > i {
+    position: absolute;
+    right: 55px;
+    top: 20px;
+}
+.conversation-keyboard_arrow {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    border: none;
 }
 .conversation-keyboar__border {
     border: 1px solid rgba(0, 0, 0, 0.2);
-    width: 90%;
+    margin: 5px 5px 5px 7px;
+    width: 95%;
     height: 40px;
     border-radius: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-.conversation-keyboar__border span {
     padding-left: 15px;
-}
-.conversation-keyboard__icon {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 71%;
-    padding-left: 10px;
+    position: relative;
+    }
+   
+.conversation-send input { 
+    transition: all 0.5s ease-in-out;
+
 }
 .conversation-keyboard_arrow {
     display: flex;
@@ -112,11 +161,15 @@
     width: 37px;
     height: 37px;
     border-radius: 50%;    
+    margin-left: 5px;
+}
+.conversation-keyboard_arrow > i {
+    margin-right: 0px;
 }
 .conversation-alphabet {
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
-    height: 240px;
+    height: 290px; 
 } 
 .conversation-alphabet__column, .conversation-alphabet__column-3 {
     display: flex;
@@ -129,8 +182,8 @@
     width: 100%;
 }
 .conversation-alphabet__box {
-    width: 40px;
-    height: 45px;
+    width: 55px;
+    height: 58px;
     margin: 10px 5px 5px 5px;
     background-color: white;
     border-radius: 7px;
@@ -161,4 +214,20 @@
 }
 .conversation-alphabet__icon i {
     margin-left: 5px;
+}
+.conversation-send .fa-plus-square, 
+.conversation-send .fa-smile, 
+.conversation-send .conversation-keyboard_arrow {
+    transition: opacity 3s ease-in-out;
+}
+
+.conversation-send:focus-within .fa-plus-square, 
+.conversation-send:focus-within .fa-smile, 
+.conversation-send:focus-within .conversation-keyboard_arrow{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+} 
+.conversation-send:focus-within input { 
+    border-color: var(--yellow);
 }

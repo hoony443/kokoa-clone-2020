@@ -24,3 +24,7 @@
 .status-bar__column:last-child span, i{
     margin-right: 5px;
 }
+.status-bar-conversation {
+    background-color: #ABC1D1;
+    z-index: 3;
+}

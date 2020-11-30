@@ -35,3 +35,25 @@
     font-weight: bold;
     font-size: 15px;
 }
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 1s;
+}
