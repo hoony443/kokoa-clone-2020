@@ -230,4 +230,5 @@
 } 
 .conversation-send:focus-within input { 
     border-color: var(--yellow);
+    outline: none;
 }
