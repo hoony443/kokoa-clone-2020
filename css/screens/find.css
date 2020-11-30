@@ -99,6 +99,7 @@
 }
 .open-chat-contents__photo {
     position: relative;
+    z-index: -1;
 }
 .open-chat-contents__likes__background {
     display: flex;
